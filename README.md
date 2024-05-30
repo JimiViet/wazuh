@@ -14,3 +14,9 @@ Register Wazuh agents as authorized members
 ```sh
 /var/ossec/bin/agent-auth -m 10.255.33.78 -A {name}
 ```
+Restart services:
+```sh
+sudo systemctl daemon-reload
+sudo systemctl enable wazuh-agent
+sudo systemctl start wazuh-agent
+```
