@@ -8,7 +8,7 @@
 ### Ways 2:
 Install Wazuh client
 ```sh
-wget https://packages.wazuh.com/4.x/apt/pool/main/w/wazuh-agent/wazuh-agent_4.7.4-1_amd64.deb && sudo WAZUH_MANAGER='10.255.33.80' WAZUH_REGISTRATION_PASSWORD=$'password' dpkg -i ./wazuh-agent_4.7.4-1_amd64.deb
+wget https://packages.wazuh.com/4.x/apt/pool/main/w/wazuh-agent/wazuh-agent_4.7.4-1_amd64.deb && sudo WAZUH_MANAGER='10.255.33.80' WAZUH_REGISTRATION_PASSWORD=$'password' WAZUH_AGENT_GROUP='default,Linux' WAZUH_AGENT_NAME='{name}' dpkg -i ./wazuh-agent_4.7.4-1_amd64.deb
 ```
 Register Wazuh agents as authorized members
 ```sh
