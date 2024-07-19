@@ -22,7 +22,7 @@ sudo systemctl start wazuh-agent
 ```
 
 ## Configure FIM (File Intergiry Monitoring)
-Location configure:
+### Location configure:
 Agent /var/ossec/etc/ossec.conf
 ```
     <syscheck>
@@ -30,7 +30,7 @@ Agent /var/ossec/etc/ossec.conf
        <directories><FILEPATH_OF_MONITORED_DIRECTORY></directories>
     </syscheck>
 ```
-Install Who-data monitorin
+### AdvanceInstall Who-data monitorin
 ```
 apt-get install auditd audispd-plugins
 systemctl restart auditd
