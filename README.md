@@ -30,7 +30,7 @@ Agent /var/ossec/etc/ossec.conf
        <directories><FILEPATH_OF_MONITORED_DIRECTORY></directories>
     </syscheck>
 ```
-### 2. AdvanceInstall Who-data monitorin
+### 2. AdvanceInstall Who-data monitoring
 ```
 apt-get install auditd audispd-plugins
 systemctl restart auditd
@@ -52,3 +52,5 @@ auditctl -l | grep wazuh_fim
 From the output, you can see the rule was added:
 Output
 auditctl -w /etc -p wa -k wazuh_fim
+
+## Malware detection
