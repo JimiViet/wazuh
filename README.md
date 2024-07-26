@@ -60,5 +60,9 @@ Collect log from agent
     <location>/var/log/audit/audit.log/location>
   </localfile>
 ```
+Restart services
+```
+systemctl restart wazuh-agent
+```
 
 ## Malware detection
