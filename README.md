@@ -53,4 +53,12 @@ From the output, you can see the rule was added:
 Output
 auditctl -w /etc -p wa -k wazuh_fim
 
+Collect log from agent
+```
+  <localfile>
+    <log_format>syslog</log_format>
+    <location>/var/log/audit/audit.log/location>
+  </localfile>
+```
+
 ## Malware detection
