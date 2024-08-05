@@ -64,5 +64,9 @@ Restart services
 ```
 systemctl restart wazuh-agent
 ```
+Create conjob "emty audit.log"
+```
+0 0 * * 0 > /var/log/audit/audit.log
+```
 
 ## Malware detection
